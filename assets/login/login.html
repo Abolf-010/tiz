@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>login</title>
+</head>
+<body>
+    
+    <div class="feadIn" id="feadIn">
+        <header class="headerContainer">
+            <h1>login</h1>
+        </header>
+        <main class="mainContainer">
+            <form action="/" id="fo">
+                <div>
+                    <div>
+                        <label class="label" for="uNameInp">User Name</label>
+                        <input spellcheck="false" required  class="inp" type="text" id="uNameInp">                        
+                    </div>
+                    <div >
+                        <div class="passCon">
+                            <label class="label" for="passInp">Password</label>
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="passs">
+                            <input spellcheck="false" required  class="inp" type="password" id="passInp">
+                            <a href="#" class="FGP">forget your password ? let's go to reset it</a>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <label class="label" for="captcha">captcha</label>
+                        <input spellcheck="false" required  class="inp" type="text" id="captcha">                        
+                    </div>
+                </div>
+                <div id="lastDiv">
+                    <button type="submit" id="subBtn" class="btn" disabled>Submit</button>                        
+                    <a class="signinLink">you don't have an account? get to signin page</a>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div>
+                <p class="copyRight">© 2022-2024 tiz co. All rights reserved </p>
+                
+            </div>
+        </footer>  
+    </div>
+    <script src="./script/login.js"></script>
+</body>
+</html>

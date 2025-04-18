@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <style>
+        .h{display: none;}
+        body{background-color: #061242;display: grid;position: fixed;top:0;left: 0;height: 100vh;width: 100vw;justify-content: center;align-items: center;font-size: 5rem;font-weight: 700;}
+        .intro{visibility: hidden;animation:intro 3.5s cubic-bezier(0.46, 0.11, 0.9, 0.78) 1s 1 normal forwards;}
+        :is(.choseDiv,.feadOut){display: grid;width: 100vw;height: 100%;}
+        .choseDiv{animation:feadIn 1s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s 1 normal forwards;}
+        .Chose{display: none;}
+        div>div{display: grid;width: 100%;height: 100%;align-items: center;justify-content: center;}
+        .log{background-color: #061242;}
+        .sing{background-color: #ba970e;color: #061242;}
+        .feadOut{animation:feadOut 1s linear 0s 1 normal forwards;}
+        @keyframes intro{0%{opacity: 0;visibility: unset;}50%{opacity: 1;}90%{opacity: 0;}100%{opacity: 0;display: none;}}
+        @keyframes feadIn{0%{opacity: 0;display: none;}100%{opacity:1;display: grid;}}
+        @keyframes feadOut{0%{opacity: 1;}100%{opacity:0;}}
+    </style>
+</head>
+<body>
+    <h1 >TIZ</h1>
+    <div class="Chose">
+        <div class="sing chose">Signin</div>
+        <div class="log chose">Login</div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

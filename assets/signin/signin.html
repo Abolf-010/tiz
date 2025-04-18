@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/signin.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>sign in</title>
+</head>
+<body>
+    <div class="feadIn" id="feadIn">
+        <header class="headerContainer">
+            <h1>sign in</h1>
+        </header>
+        <main class="mainContainer">
+            <form action="/" id="fo">
+                <div>
+                    <div>
+                        <label class="label" for="nameInp">Name</label>
+                        <input spellcheck="false" required  class="inp" type="text" id="nameInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                    <div>
+                        <label class="label ageInp" for="ageInp">Age</label>
+                        <input min="1910-00-00" spellcheck="false" required  class="inp" type="date" id="ageInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                    <div>
+                        <label class="label" for="uNameInp">User Name</label>
+                        <input spellcheck="false" required  class="inp" type="text" id="uNameInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                    <div>
+                        <label class="label" for="phoneNumInp">Email</label>
+                        <input  spellcheck="false" required  class="inp" type="email" id="phoneNumInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                    <div >
+                        <div class="passCon">
+                            <label class="label" for="passInp">Password</label>
+                            <div>
+                                <i class="fa fa-eye"></i>
+                                <i class="fas fa-key"></i>
+                            </div>
+                        </div>
+                        <input spellcheck="false" required  class="inp" type="password" id="passInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                    <div>
+                        <div  class="passCon">
+                            <label class="label" for="rePassInp">RePassword</label>
+                            <div>
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            
+                        </div>
+                        <input spellcheck="false" required  class="inp" type="password" id="rePassInp">
+                        <span class="hint">status:Empty</span>
+                    </div>
+                </div>
+                <div id="lastDiv">
+                    <div>
+                        <div>
+                            <input type="checkbox" id="rules" >
+                            <a href="#">I read and agree Rules</a>
+                            
+                        </div>
+                        <div>
+                            <a class="loginLink">you have an account? get to login page</a>
+                        </div>
+                    </div>
+                    <button type="submit" id="subBtn" disabled>Submit</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div>
+                <p class="copyRight">© 2022-2024 tiz co. All rights reserved </p>
+            </div>
+        </footer>  
+    </div>
+    <script src="./script/signin.js"></script>
+</body>
+</html>

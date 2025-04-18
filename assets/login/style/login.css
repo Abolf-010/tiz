@@ -1,0 +1,28 @@
+
+*::selection{background-color: #ba970ed9;}
+h1{text-align: center;}
+body{background-color: #061242;}
+:is(.gridContainer,.feadIn,.feadOut){width: 100vw;height: 100vh;display: grid;grid-template-rows: 2fr 7fr 1fr;align-items: center;justify-content: center;position: fixed;top: 0;left: 0; opacity: 1;z-index: 1;}
+.headerContainer{height: 100%;display: grid;align-content: center;z-index: 2;}
+.headerContainer>h1{font-size: 3vw;}
+.mainContainer{display: grid;z-index: 2;}
+.mainContainer>form{width: 30vw;height: 60vh; display: grid;grid-template-columns: auto;grid-template-rows: 7fr 3fr;outline: solid 0.2vh #ba970ed9; border-radius: 1vh;align-items: center;justify-items: center;background-color: #061242;}
+.mainContainer>form>div{display: grid;grid-template-columns:auto ;width: 90%;height: 100%;align-content: space-evenly;justify-items: center;}
+.mainContainer>form>div>div{display: grid;width: 80%;height: 80%;align-content: center;}
+.passCon{display: grid;width: 100%;height: 100%;grid-area: 1/1/1/1;z-index: 2;grid-template-columns: 20fr 1fr;}
+.passs{display: grid;height: 100% ;width: 100%;grid-area: 1/1/1/1;align-content:space-evenly ;z-index: 1;}
+.fa-eye{z-index: 4;}
+.passs>a{text-align: center;margin-top: 2vh;}
+#lastDiv{display: grid;justify-items: center;height: 100%;width: 90%;justify-content: center;}
+label{grid-area: 1/1/1/1;z-index: 2;background-color: transparent;text-align: left;bottom: 0.5vw;font-weight: 700  ;position: relative;transition: all 200ms;height: 100%;}
+input{border: none;border-bottom: solid #ba970ed9 0.1vh;grid-area: 1/1/1/1;outline: none;text-align: left;font-weight: 600;font-size: 1vw;background-color: transparent;}    
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+button{padding: 1vw 2vw;outline: none;border: #bb993a solid 0.2vh;border-radius: 0.7vh;color: #bb993a;font-size: 1vw;font-weight: 600;width: 100%;background-color: transparent;transition: all 300ms;}
+footer{display: grid;text-align: center;}
+
+.feadIn{opacity: 0;animation: feadIn 1s linear 0s 1 normal forwards;}
+.feadOut{opacity: 1;animation: feadOut 1s linear 0s 1 normal forwards;}
+
+
+@keyframes feadIn {0%{opacity: 0;}100%{opacity: 1;}}
+@keyframes feadOut {0%{opacity: 1;}100%{opacity: 0;display: none;}}

@@ -1,0 +1,24 @@
+*{text-align: center;user-select: none;}
+*::selection {background-color: #bb993a !important; }
+*::placeholder {color: #bb993a; }
+body{background-color: #b28406;}
+:root{--grid-row: 10fr 5fr 5fr;--grid-column:6fr 20fr;}
+.gridContainer{display: grid;grid-template-rows: 1fr 8fr 1fr ;width: 100vw;height: 100vh;position: fixed;top: 0;left: 0;}
+nav{display: grid;width: 100%;height: 100%;grid-auto-flow: column;justify-content: space-between;align-items: center;list-style: none;padding: 0vw 2vw;font-size: 2vw;font-weight: 800;}
+footer,header{background-color: #061242;}
+main{display: grid;align-items: center;grid-template-rows: 1fr 9fr;height: 80vh;}
+
+.fa-user-group{color: #e1d7bc !important;}
+.forumHead{display: grid;grid-auto-flow: column;justify-content: center;align-items: center;font-size: 1.5vw;}
+.forumHead>.fa-search{grid-area: 1/14/1/19;padding-right:0  0.5vw;position: relative;left: 1.2vw;}
+
+.forumHead>input{width: 30vw;background-color: transparent;border: none;outline: none;border: #061242 solid 0.1vh;text-align: left;padding: 0.3vw 2.8vw 0.3vw 0.8vw;font-size: 1vw;font-weight: 600;border-radius: 50.1vh;grid-area: 1/2/1/20;color: #061242 !important;}
+.forumMain::-webkit-scrollbar{background: #061242;border-radius: 1.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.forumMain::-webkit-scrollbar-thumb{background: #061242;border-radius: 1.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.forumMain::-webkit-scrollbar-track{background: #b28406;border-radius: 1.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.forumMain{height: 100%;width: 100%;overflow-y: auto}
+.forumMain>div{display: grid;grid-template-columns: 5fr 5fr ;grid-template-rows: 5fr 5fr;width: 100%;height:100%;gap: 1.5vw;padding: 0.75vw;justify-items: center;}
+.qust{background-color: #061242;border-radius: 1.7vh;display: grid;height: 32vh;grid-template-rows:2fr 6fr 2fr;align-content: center;width: 45vw;}
+.qust>div{height: 12vh;align-content: center;}
+.QBody{text-align: left;padding: 0vw 2vw;overflow: hidden;}
+.QFooter{display: grid;grid-auto-flow: column;justify-content: space-around;align-content: center;font-size: 1.2vw;}

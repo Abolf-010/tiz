@@ -1,0 +1,42 @@
+*{text-align: center;user-select: none;}
+*::selection {background-color: #bb993a !important; }
+*::placeholder {color: #bb993a; }
+body{background-color: #061242;}
+
+:is(.gridContainer,.feadIn,.feadOut){width: 100vw;height: 100vh;display: grid;grid-template-rows: 2fr 7fr 1fr;align-items: center;justify-content: center;position: fixed;top: 0;left: 0; opacity: 1;z-index: 1;}
+.headerContainer{height: 100%;display: grid;align-content: center;z-index: 2;}
+.headerContainer>h1{font-size: 3vw;}
+.mainContainer{display: grid;z-index: 2;}
+.mainContainer>form{width: 65vw;height: 60vh; display: grid;grid-template-columns: auto;grid-template-rows: 7fr 3fr;outline: solid 0.2vh #ba970ed9; border-radius: 1vh;align-items: center;justify-items: center;background-color: #061242;}
+.mainContainer>form>div{display: grid;grid-template-columns:auto auto;width: 90%;height: 100%;align-content: space-around;justify-items: center;}
+.mainContainer>form>div>div{display: grid;width: 80%;height: 80%;align-content: center;}
+#lastDiv{display: grid;justify-items: center;height: 100%;width: 90%;}
+#lastDiv>div{display: grid;grid-auto-flow: column;justify-content: space-between;align-content: center;grid-area: 2/1/2/10;width: 90%;}
+a{text-decoration: none;}
+#rules{accent-color: #bb993a;width: 1vw;height: 0.9vw;transition: all 300ms;}
+label{grid-area: 1/1/1/1;z-index: 2;background-color: transparent;text-align: left;bottom: 0.5vw;font-weight: 700  ;position: relative;transition: all 200ms;height: 100%;}
+input{border: none;border-bottom: solid #ba970ed9 0.1vh;grid-area: 1/1/1/1;outline: none;text-align: left;font-weight: 600;font-size: 1vw;background-color: transparent;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield; background-color: tr;}
+input[type=date]:required:invalid::-webkit-datetime-edit {color: transparent;}
+input[type=date]:focus::-webkit-datetime-edit {color: #ba970ed9 !important;}
+/* label[for=ageInp]:focus{bottom: 8vw !important;} */
+button{padding: 1vw 2vw;outline: none;border: #bb993a solid 0.2vh;border-radius: 0.7vh;color: #bb993a;font-size: 1vw;font-weight: 600;width: 90%;grid-area: 1/1/2/10;background-color: transparent;transition: all 300ms;}
+.hint{font-size: 0.8vw;text-align: left;width: 20vw;color: #d2c886;}
+.passCon{grid-area: 1/1/1/1;display: grid;grid-auto-flow: column;justify-content: space-between;}
+.passCon>div>i{position: relative;;bottom: 0.5vw;}
+footer{z-index: 2;}
+.fa-eye{transition: all 200ms;}
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+  background-color: #bb993a;
+  color:#efc310;
+ }
+
+.feadIn{opacity: 0;animation: feadIn 1s linear 0s 1 normal forwards;}
+.feadOut{opacity: 1;animation: feadOut 1s linear 0s 1 normal forwards;}
+
+
+@keyframes feadIn {0%{opacity: 0;}100%{opacity: 1;}}
+@keyframes feadOut {0%{opacity: 1;z-index: 1;}100%{opacity: 0;display: none;z-index: 0;}}

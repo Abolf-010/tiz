@@ -1,0 +1,99 @@
+const $=document;
+const a=$.querySelectorAll('.a')
+const goBtn=$.querySelectorAll('.go')
+let asd;
+let co=[]
+
+for (let index = 0; index < goBtn.length; index++) {
+    const element = goBtn[index];
+    element.addEventListener('click',()=>{
+        
+            $.querySelector('main').style.transition='all 300ms '
+            $.querySelector('main').style.opacity='0'
+            $.querySelector('main').addEventListener('transitionend',()=>{
+            fetch('/school/teach',{
+                method:"post",
+            }).then(response=>response.text()).then(data=>{window.location=data})
+            })
+        
+        
+        })
+}
+
+for (let index = 0; index < a.length; index++) {
+    const element = a[index];
+    element.style.transition='all 300ms '
+    element.style.color='#efc310'
+}
+a[0].addEventListener('click',()=>{
+    a[0].style.transition='all 300ms '
+    a[0].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+fetch('/school',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})
+a[1].addEventListener('click',()=>{
+    a[1].style.transition='all 300ms '
+    a[1].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+fetch('/quiz',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})
+a[2].addEventListener('click',()=>{
+    a[2].style.transition='all 300ms '
+    a[2].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+fetch('/forum',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})
+a[3].addEventListener('click',()=>{
+    a[3].style.transition='all 300ms '
+    a[3].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+    fetch('/about',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})
+a[4].addEventListener('click',()=>{
+    a[4].style.transition='all 300ms '
+    a[4].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+fetch('/home',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})
+a[5].addEventListener('click',()=>{
+    a[5].style.transition='all 300ms '
+    a[5].style.color='#e1d7bc '
+    $.querySelector('main').style.transition='all 300ms '
+    $.querySelector('main').style.opacity='0'
+    $.querySelector('main').addEventListener('transitionend',()=>{
+fetch('/profile',{
+        method:"post",
+    }).then(response=>response.text()).then(data=>{window.location=data})
+    })
+    
+})

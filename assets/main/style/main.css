@@ -1,0 +1,24 @@
+*{text-align: center;user-select: none;}
+*::selection {background-color: #bb993a !important; }
+*::placeholder {color: #bb993a; }
+body{background-color: #b28406;overflow: hidden;}
+:root{--grid-row: 10fr 5fr 5fr;--grid-column:6fr 20fr;}
+.gridContainer{display: grid;grid-template-rows: 1fr 8fr 1fr ;width: 100vw;height: 100vh;position: fixed;top: 0;left: 0;}
+footer,header{background-color: #061242;}
+nav{display: grid;width: 100%;height: 100%;grid-auto-flow: column;justify-content: space-between;align-items: center;list-style: none;padding: 0vw 2vw;font-size: 2vw;font-weight: 800;}
+main{display: grid;grid-template-columns: var(--grid-column);height: 100%;gap: 1.5vw;padding: 1vw 2vw;}
+main h4{font-size: 1.2vw;font-weight: 700;padding: 0.7vw 0vw;}
+.divCo>div:not(.divCon),.divCon>div{width: 100%;height: 100%;background-color: #061242;border-radius: 1vh;}
+.divCo{display: grid;gap: 1vw;border-radius: 1vh;}
+.divCon{display: grid;gap: 1vw;border-radius: 1vh;grid-auto-flow: column;grid-template-columns: 6fr 4fr;}
+.task{display: grid;width: 100%;height: 100%;background-color: #061242;border-radius: 1vh;grid-template-rows: 1fr 8fr 1fr;}
+.toDoInpCon>input{background-color: transparent;border: none;outline: none;border-bottom: #bb993a solid 0.1vh;text-align: left;padding: 0.2vw 0.5vw;font-size: 1vw;font-weight: 600;width: 80%;}
+.toDoInpCon>button{background-color: #b28406;color: #061242;border-radius: 0.5vh;border: #b28406 solid 0.2vh;padding: 0.2vw 0.7vw;outline: none;font-size: 0.9vw;font-weight: 700;}
+.toDos{display: grid;justify-items: center;height: 60vh;align-content: start;gap: 1.5vw;overflow:scroll ;}
+.toDos::-webkit-scrollbar{display: none;}
+.toDo{border: #bb993a solid 0.1vh;width: 80%;border-radius: 0.5vh;font-size: 1vw;font-weight: 600;display: grid;grid-template-columns: 1fr 9fr;align-items: center;}
+.toDo>span{display: grid;align-items: start;height: 100%;justify-content: start;text-align: left;padding: 0.2vw;}
+.toDo>div{display: grid;padding: 0.5vw;gap: 0.5vw;height: 100%;align-content: start;font-size: 1.2vw;}
+.fa-checked{color: #bb993a !important;transition: all 300ms;}
+.fa-check{color: #bb993aac;transition: all 300ms;}
+.fa-home{color: #e1d7bc !important;}

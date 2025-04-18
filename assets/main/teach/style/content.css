@@ -1,0 +1,24 @@
+*{text-align: center;user-select: none;}
+*::selection {background-color: #bb993a !important; }
+*::placeholder {color: #bb993a; }
+body{background-color: #b28406;}
+:root{--small:10vh;--meduim:30vh;--large:50vh;}
+.gridContainer{display: grid;grid-template-rows: 1fr 8fr 1fr ;width: 100vw;height: 100vh;position: fixed;top: 0;left: 0;}
+nav{display: grid;width: 100%;height: 100%;grid-auto-flow: column;justify-content: space-between;align-items: center;list-style: none;padding: 0vw 2vw;font-size: 2vw;font-weight: 800;}
+footer,header{background-color: #061242;}
+.fa-school{color: #e1d7bc !important;}
+main{width: 100vw;height: 80vh;overflow-y: auto;overflow-x: hidden;display: grid;grid-template-rows: 1fr 9fr;}
+main::-webkit-scrollbar{background: #061242;border-radius: 0.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+main::-webkit-scrollbar-thumb{background: #061242;border-radius: 0.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+main::-webkit-scrollbar-track{background: #b28406;border-radius: 0.7vh;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+
+.search{display: grid;grid-auto-flow: column;justify-content: center;align-items: center;font-size: 1.5vw;padding-top: 1.7vh;position: static;width: 100vw;}
+.search>.fa-search{grid-area: 1/14/1/19;padding-right:0  0.5vw;position: relative;left: 1.2vw;position: static;top: 10vh;left: 35vw;}
+.search>input{width: 30vw;background-color: transparent;border: none;outline: none;border: #061242 solid 0.2vh;text-align: left;padding: 0.3vw 3.7vw 0.3vw 0.8vw;font-size: 1vw;font-weight: 600;border-radius: 2vh;grid-area: 1/2/1/20;color: #061242 !important;position: static;top: 10vh;left: 35vw;z-index: 10}
+.mainHead{display: grid;font-size: 2vw;font-weight: 700;padding: 2vw;}
+.mainBody{width: 100%;align-items: center;justify-items: center;gap: 2vw;display: grid;height: 100%;padding: 2vw;}
+.content{background-color: #061242;display: grid;grid-template-rows: 2fr 8fr;width: 90%;height: max-content;border-radius: 1vw;align-items: center;justify-items: left;padding: 1vw;}
+.contentBody{display: grid;grid-template-columns: 2fr 2fr 2fr 2fr;width: 100% !important;align-content:space-around ;justify-content: space-around;height: var(--meduim);padding: 1vw;}
+.contentBody span{text-align: left;text-decoration: underline; }
+
+

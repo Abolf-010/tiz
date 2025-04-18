@@ -1,0 +1,51 @@
+*{text-align: center;user-select: none;}
+*::selection {background-color: #bb993a !important; }
+*::placeholder {color: #bb993a; }
+body{background-color: #b28406;}
+:root{--grid-row: 10fr 5fr 5fr;--grid-column:6fr 20fr;}
+.gridContainer{display: grid;grid-template-rows: 1fr 8fr 1fr ;width: 100vw;height: 100vh;position: fixed;top: 0;left: 0;}
+nav{display: grid;width: 100%;height: 100%;grid-auto-flow: column;justify-content: space-between;align-items: center;list-style: none;padding: 0vw 2vw;font-size: 2vw;font-weight: 800;}
+footer,header{background-color: #061242;}
+.fa-question-circle{color: #e1d7bc !important;}
+main{display: grid;align-items: center;justify-content: center;}
+.settingHead{height: 100%;font-size: 1.5vw;align-content: center;}
+.setting{animation: feadIn 300ms linear 0s 1 normal forwards;}
+.setting,.settingOut{display: grid;background-color: #061242;border-radius: 1.0vh;width: 80vw;height: 35vw;grid-template-rows: 2fr 6fr 2fr;align-items: center;position: fixed;top: 15.5%;left: 10%;z-index: 1;}
+.settingOut{animation: feadOut 500ms linear 0s 1 normal forwards;}
+.settingMain{display: grid;justify-items: center;grid-template-columns: 5fr 5fr;grid-template-rows: 5fr 5fr;align-items: center;height: 100%;}
+.dropDownCon{width: 10vw;height: 4vh;justify-items: center;position: relative;left: 2.2vw;}
+.selectedValue{padding: 0.5vw 0vw;font-size: 1.15vw;display: grid;grid-auto-flow: column;}
+.selectedValue>span{width: 10vw;background-color: #061242;border-radius: 25vw 25vw;border: #bb993a solid 0.2px;position: relative;right: 10.3vw;}
+.selectedValue>label{width: 10vw;position: relative;right: 10vw;}
+.DisNo{display: none;}
+input{border: none;border-bottom: solid #ba970ed9 0.1px;grid-area: 1/1/1/1;outline: none;text-align: left;font-weight: 600;font-size: 1vw;background-color: transparent;padding-left: 0.2vw;}    
+label{font-size: 1vw;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield; background-color: tr;}
+.desable{color: #e1d7bc !important;transition: all 300ms;font-size: 1.2vw;}
+.act{color:#efc310 !important;font-size: 1.2vw;}
+.values0{position: relative;animation: dropUp 300ms linear 0s 1 normal forwards !important;}
+.values{position: relative;animation: dropDown 300ms linear 0s 1 normal forwards !important ;}
+.value{width: 10vw;;position: relative;font-size: 1.15vw;background-color: #06124243;border-radius:2.5px ;margin: 0.1vw;border: #bb993a solid 0.2px;  }
+.settingFooter{display: grid;align-items: center;justify-items: center;height: 100%;}
+.settingFooter>button{padding: 1vw 1vw;background-color: #b28406;border: none;outline: none;border-radius: 2vw;color: #061242;font-size: 1.1vw;font-weight: 700;align-content: center;height: max-content;width: 30%;}
+
+.out{display: none;}
+.examCon,.examOut{animation: feadIn 600ms linear 0s 1 normal forwards;display: grid;grid-template-columns: 1fr;width: 100Vw;height: 80vh;overflow-y: scroll;overflow-x: hidden;gap: 2vw;padding: 1.2vw 4vw;align-items: center;}
+
+.examCon::-webkit-scrollbar{background: #061242;border-radius: 0.7px;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.examCon::-webkit-scrollbar-thumb{background: #061242;border-radius: 0.7px;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.examCon::-webkit-scrollbar-track{background: #b28406;border-radius: 0.7px;width: 0.5vw;padding: 0.5vw;position: relative;right: 0.5vw;}
+.examCon>div{background-color: #061242;border-radius: 1.0vh;display: grid;grid-template-rows: 8fr 2fr;justify-items: center;align-items: center;}
+.examCon>div>button{padding: 1vw 1vw;background-color: #b28406;border: none;outline: none;border-radius: 2vw;color: #061242;font-size: 1.1vw;font-weight: 700;align-content: center;height: max-content;width: 30%;}
+.qustCon{display: grid;height: 60vh;grid-template-columns: 5fr 5fr;}
+.qust{display: grid;grid-template-rows: 2fr 8fr;align-items: center;height: 100%;justify-items: left;padding: 1vw;}
+.qust>p{padding: 1vw;align-content: start !important;height: 100%;text-align: left;font-size: 1vw;}
+.qust>h4{font-size: 1.2vw;}
+.anowserCon{display: grid;align-content:space-around;height: 100%;}
+.anowser{width: 80%;border: #b28406 solid 0.2vh;border-radius: 0.5vh;padding: 1vw;font-size: 1vw;}
+
+@keyframes dropDown{0%{display: none;top: 2vh;opacity: 0;}100%{top: 0vh;opacity: 1;}}
+@keyframes dropUp{0%{display: unset !important;position: relative;top: 0vh;opacity: 1;}90%{opacity: 0;}100%{opacity: 0; top: 2vh;display: none !important;  }}
+@keyframes feadIn {0%{opacity: 0;}100%{opacity: 1;}}
+@keyframes feadOut {0%{opacity: 1;}100%{opacity: 0;display: none;}}
